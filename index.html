@@ -4,7 +4,7 @@
 <head>
   <meta name="description" content="Webpage description goes here" />
   <meta charset="utf-8">
-  <title>eric games</title>
+  <title>project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="">
   <link rel="stylesheet" href="style.css">
@@ -22,7 +22,7 @@
     <p class="seconds">&#58;</p>
     <p id="minute">00</p>
     <div class="traincontainer">
-    <p id="trainname"> S3</p>
+    <p id="trainname">S3</p>
     
     </div>
 
@@ -79,7 +79,7 @@
         <div class="stick2"></div>
 
       </div>
-      <p id="text3">Olten</p>
+      <p id="text4">Olten</p>
     </div>
     
 
@@ -87,10 +87,61 @@
 
   </div>
 
+</div>
+<button onclick=show()>konfigurieren</button>
+<div id="controllpanel">
+  <div>
+    <p>zeit</p>
+<label for="fname">stunden:</label>
+<input type="number" id="ho"
+placeholder="17"
+name="tentacles" min="0" max="23">
+<label for="fname">minuten:</label>
+<input type="number" id="mi"
+name="tentacles" min="00" max="59"
+>
+<button onclick=settime()>apply</button>
+</div>
+
+<div>
+  <p>zielort</p>
+  
+  <label for="fname">zielort:</label>
+  <input type="text" id="destination">
+  <button onclick=setdestination()>apply</button>
+</div>
+
+
+<div>
+  <p>stationen</p>
+  <label for="fname">zielort:</label>
+  <input type="text" id="sta1">
+
+  <label for="fname">zielort:</label>
+  <input type="text" id="sta2">
+
+  <label for="fname">zielort:</label>
+  <input type="text" id="sta3">
+  <button onclick=setstation()>apply</button>
+
 
 </div>
 
-<script>
+<div>
+  <p>zug</p>
+  
+  <label for="cars">Choose a train:</label>
+  <select name="trains" id="train">
+    <option value="S1">S1</option>
+    <option value="S3">S3</option>
+  </select>
+  <button onclick=settrain()>apply</button>
+</div>
+
+</div>
+
+
+<script src="main.js">
 </script>
 
 </body>
